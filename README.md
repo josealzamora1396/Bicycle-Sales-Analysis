@@ -87,7 +87,7 @@ The analysis included:
 - Customer demographics
 - Product-level sales performance
 
-View [Exploratory Data Analysis](<../SQL/Exploratory Data Analysis.sql>) in SQL
+View [Exploratory Data Analysis](SQL/01_EDA.sql) in SQL
 
 
 
@@ -109,7 +109,7 @@ The analysis included:
 
 The customer activity analysis uses a fixed reference date of January 31, 2014 to reproduce the historical analysis consistently.
 
-View [Customer Segmentation](<../SQL/Customer segmentation.sql>) in SQL
+View [Customer Segmentation](SQL/02_Customer_Segmentation.sql) in SQL
 
 
 **3. Product Performance**
@@ -130,7 +130,7 @@ The analysis included:
 - Historical ranking evolution
 - Products with and without recorded sales
 
-View [Product Performance Analysis](<../SQL/Product performance analysis.sql>) in SQL
+View [Product Performance Analysis](SQL/03_Product_Performance.sql) in SQL
 
 ## SQL Analysis
 
@@ -142,7 +142,7 @@ Customer-level metrics were calculated from transaction data, including first an
 
 The analysis then classified customers according to **Age group, recency and spending behavior**.
 
-For the complete analysis, view [Customer Segmentation](<../SQL/Customer segmentation.sql>)
+For the complete analysis, view [Customer Segmentation](SQL/02_Customer_Segmentation.sql)
 
 **Age Group segmentation:**
 ```sql
@@ -181,7 +181,7 @@ CASE
 
 Product-level analysis was built from the complete product catalog using a `LEFT JOIN` with sales transactions. This approach ensured that products with no recorded sales were retained in the analysis.
 
-For the complete analysis, view [Product Performance Analysis](<../SQL/Product performance analysis.sql>)
+For the complete analysis, view [Product Performance Analysis](SQL/03_Product_Performance.sql)
 
 
 ```sql
@@ -352,7 +352,7 @@ The SQL analysis was transformed into an interactive Power BI dashboard designed
 
 ### Customer Analysis
 
-![alt text](<../Images/Customer and Sales Dashboard.JPG>)
+![Customer and Sales Dashboard](Images/customer_sales_dashboard.jpg)
 
 The customer analysis provides visibility into:
 
@@ -365,7 +365,7 @@ The customer analysis provides visibility into:
 
 ### Product Performance
 
-![alt text](<../Images/Product performance Dashboard.JPG>)
+![Product Performance Dashboard](Images/product_performance_dashboard.jpg)
 
 The product performance analysis focuses on:
 
@@ -438,7 +438,7 @@ DIVIDE(
 )
 ```
 
-Additional measures used to support the dashboard are available in the [Dax Key Measures](../DAX/DAX_Key_Measures.md) file.
+Additional measures used to support the dashboard are available in the [Dax Key Measures](DAX/DAX_Key_Measures.md) file.
 
 ---
 
